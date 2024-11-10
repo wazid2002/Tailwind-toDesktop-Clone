@@ -9,23 +9,25 @@
 </head>
 <body>
     <nav class="p-3 flex bg-white justify-between items-center">
-        <a href="#" id="brand" class="flex  gap-2 items-center">
+        <a href="#" id="brand" class="flex  gap-2 items-center flex-1">
             <img class="object-cover w-12 h-12"  src="assets\todesktop-logo.bn2Qe8sb.avif" alt="Logo">
             <span class="font-medium font-display text-lg">ToDesktop</span>
         </a>
-        <div id="buttons" class="hidden lg:flex gap-12"> 
+        <div id="buttons" class="hidden lg:flex gap-12  "> 
             <a href="#" class="font-medium hover:text-primary">Pricing</a>
             <a href="#" class="font-medium hover:text-primary">Docs</a>
             <a href="#" class="font-medium hover:text-primary">Changelog</a>
             <a href="#" class="font-medium hover:text-primary">Blog</a>
             <a href="#" class="font-medium hover:text-primary">Login</a>
           </div>
-
-          <button class="hidden lg:flex gap-2 px-6  py-2 border border-gray-400 rounded-lg hover:border-gray-900 items-center">
+          <div class="hidden lg:flex flex-1 justify-end ">
+            <button class="flex gap-2 px-6  py-2 border border-gray-400 rounded-lg hover:border-gray-900 items-center">
             <img src="assets\electron-icon.E8mrXtZM.svg" alt="">
             <span>Electron Developer</span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
+        </div>
+          
           
         <button class="lg:hidden p-2" onclick="handleMenu()">
             <i class="fa-solid fa-bars text-gray-600"></i> 
@@ -54,17 +56,43 @@
             <img src="assets\electron-icon.E8mrXtZM.svg" alt="">
             <span class="font-medium">Electron Developer</span>
           </button>
+        </div>
+    </nav>
+    <main>
+    <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-100 via-orange-50 to-transparent sm:text-center sm:items-center">
+        <div id="hero-container" class="flex flex-col sm:items-center ">
+            <div id="version-text" class="flex items-center mt-12 mb-8 gap-2 h-6 w-fit px-3 py-4 bg-yellow-50 border border-yellow-300 rounded-lg mx-4 shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
+                <div class="h-2 w-2 bg-yellow-400 rounded-lg border border-yellow-500"></div>
+                <p class="font-medium font-display text-yellow-600">v0.24.1:<span class="text-yellow-900">Find-in-page bug fixes</span></p>
+                <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
+            </div>
+            <div id="features" class="hidden sm:flex gap-8 text-slate-500">
+                <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-file-code"></i>
+                    <p>code optional</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-hand-fist "></i>
+                    <p>Drag and drop builder</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-file"></i>
+                    <p>Windows,Mac,Linux</p>
+                </div>
+            </div>
+            <div class="">
+                <h1 class="font-semibold leading-snug text-5xl mt-4 mx-4 mb-4 sm:text-6xl sm:leading-normal">Web app to desktop <br> in minutes</h1>
+                <p class="text-xl mt-6 mx-4 mb-6 font-main sm:text-3xl sm:mt-8 text-gray-800">Take your web app codebase and transform it into a cross<br> platform desktop app with native functionality.</p>
+                <div id="buttons" class="flex flex-col sm:flex-row gap-4 justify-center mx-4 mt-12">
+                    <button class="bg-primary text-white px-8 py-3 font-semibold rounded-lg shadow-md hover:opacity-90">Download now</button>
+                    <button class="px-8 py-3 font-semibold rounded-lg shadow-md border border-gray-400 hover:border-gray-800">Read docs</button>
+                </div>
+            </div>
 
-            
 
         </div>
-        
-
-    </nav>
-    
-    
-    
-    
+    </div>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>

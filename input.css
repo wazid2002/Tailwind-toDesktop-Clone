@@ -4,3 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+    body{
+        @apply font-main;
+    }
+    h1,h2,h3{
+        @apply font-display font-medium;
+    }
+}
+
