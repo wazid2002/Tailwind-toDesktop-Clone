@@ -13,7 +13,7 @@
             <img class="object-cover w-12 h-12"  src="assets\todesktop-logo.bn2Qe8sb.avif" alt="Logo">
             <span class="font-medium font-display text-lg">ToDesktop</span>
         </a>
-        <div id="buttons" class="hidden md:flex gap-12"> 
+        <div id="buttons" class="hidden lg:flex gap-12"> 
             <a href="#" class="font-medium hover:text-primary">Pricing</a>
             <a href="#" class="font-medium hover:text-primary">Docs</a>
             <a href="#" class="font-medium hover:text-primary">Changelog</a>
@@ -21,15 +21,43 @@
             <a href="#" class="font-medium hover:text-primary">Login</a>
           </div>
 
-          <button class="hidden md:flex gap-2 px-6  py-2 border border-gray-400 rounded-lg hover:border-gray-900 items-center">
+          <button class="hidden lg:flex gap-2 px-6  py-2 border border-gray-400 rounded-lg hover:border-gray-900 items-center">
             <img src="assets\electron-icon.E8mrXtZM.svg" alt="">
             <span>Electron Developer</span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
           
-        <button class="md:hidden p-2" onclick="handleMenu()">
+        <button class="lg:hidden p-2" onclick="handleMenu()">
             <i class="fa-solid fa-bars text-gray-600"></i> 
         </button>
+
+        <div id="inset-nav" class="hidden fixed inset-0 bg-white p-3 ">
+            <div class="flex justify-between" id="nav-bar">
+                <a href="#" id="brand" class="flex  gap-2 items-center">
+                    <img class="object-cover w-12 h-12"  src="assets\todesktop-logo.bn2Qe8sb.avif" alt="Logo">
+                    <span class="font-medium font-display text-lg">ToDesktop</span>
+                </a>
+                <button class="md:hidden p-2" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-gray-600"></i> 
+                </button>
+            </div>
+            <div class="mt-10">
+                <a href="#" class="p-3  font-medium hover:bg-slate-100 block rounded-lg">Pricing</a>
+                <a href="#" class="p-3  font-medium hover:bg-slate-100 block rounded-lg">Docs</a>
+                <a href="#" class="p-3  font-medium hover:bg-slate-100 block rounded-lg">Changelog</a>
+                <a href="#" class="p-3  font-medium hover:bg-slate-100 block rounded-lg">Blog</a>
+                <a href="#" class="p-3  font-medium hover:bg-slate-100 block rounded-lg">Login</a>
+            </div>
+            <div class="h-[1px] w-full bg-slate-300"></div>
+
+            <button class="flex gap-2 mt-6 px-6 w-full py-4 rounded-lg hover:bg-gray-100 items-center">
+            <img src="assets\electron-icon.E8mrXtZM.svg" alt="">
+            <span class="font-medium">Electron Developer</span>
+          </button>
+
+            
+
+        </div>
         
 
     </nav>

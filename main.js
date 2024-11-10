@@ -1,3 +1,5 @@
+let nav=document.getElementById("inset-nav")
+
 function handleMenu(){
-    console.log("check");
+    nav.classList.toggle('hidden');
 }
