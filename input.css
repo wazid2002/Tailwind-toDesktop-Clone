@@ -18,5 +18,11 @@
     .custom-anchor{
         @apply border-b border-dotted border-gray-300 hover:border-b hover:border-solid hover:border-gray-500
     }
+    .gradient-hover-outer{
+        @apply p-[1px] bg-gradient-to-br from-zinc-50 to-zinc-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200
+    }
+    .gradient-hover-inner{
+        @apply hover:bg-gradient-to-br hover:from-red-50 hover:via-purple-50 hover:to-yellow-50
+    }
 }
 
